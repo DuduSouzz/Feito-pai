@@ -1,3 +1,28 @@
+//Função para exibir um pop-up de mensagem
+function showMessage(message) {
+    alert(message); //Exibe a mensagem em um pop-up
+}
+
+//Função para obter os parâmetros da URL
+function getQueryParams() {
+    const params = new URLSearchParams(window.location.search);
+    return {
+        message: params.get('message'),
+        type: params.get('type')
+    };
+}
+
+//Quando o documento estiver carregado
+window.onload = function() {
+    const { message, type } = getQueryParams();
+    if (message) {
+        showMessage(message);
+        //Redireciona para remover os parâmetros da URL
+        window.history.replaceState(null, '', window.location.pathname);
+    }
+};
+
+//CAMPOS PARA A VALIDAÇÃO DO FORMULÁRIOOOOOOO
 const form = document.querySelector('#form');
 const nameInput = document.querySelector('#nome');
 const emailInput = document.querySelector('#email');
@@ -6,7 +31,7 @@ const empresaInput = document.querySelector('#empresa');
 const campos = document.querySelectorAll('.puts');
 const spans = document.querySelectorAll('.span-required');
 
-
+    //Ouvinte de evento para formulário após acionar o botão
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -74,7 +99,7 @@ function IsEmailValido(email){
 
 function IsTelefoneValido(telefone, minDigitos){
     const telefoneXeger = new RegExp(
-        /^[0-9]$/
+        /^[0-9]+$/
     );
     if(telefone.length >= minDigitos ){
 
