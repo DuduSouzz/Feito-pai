@@ -1,0 +1,267 @@
+@font-face {
+    font-family: GrimptBold;
+    src: url(../Fonte/grimpt-bold.ttf);
+}
+
+@font-face {
+    font-family: GrimptRegular;
+    src: url(../Fonte/grimpt-regular.ttf);
+}
+
+@font-face {
+    font-family: Kagitingan;
+    src: url(../Fonte/Kagitingan.otf);
+}
+
+* {
+    margin: 0; /* Tirar as margens e espaçamentos*/
+    padding: 0;
+}
+
+/* Corpo - Navbar*/
+body {
+    background-color: #1B262C; /* Cor de fundo*/
+    width: 100%;
+    overflow-x: hidden; /* Impede a rolagem lateral */
+}
+
+.Logo {
+    display: flex; 
+    margin: 0% 0% 2% 8%;
+}
+
+nav {
+    margin-top: 2%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+nav a:hover {
+    color: #c43024;
+}
+
+.Links {
+    display: flex;
+}
+
+.Links > li {
+    padding-left: 30px;
+    list-style: none;
+}
+
+.Botao_sobrenos {
+    color: #c43024;
+    font-family: GrimptBold;
+    font-size: 25px;
+}
+
+.Botao_home,
+.Botao_serviços {
+    text-decoration: none;
+    color: #F2F2F2;
+    font-family: GrimptBold;
+    font-size: 25px;
+}
+
+.Botao_faleconosco {
+    font-family: GrimptBold;
+    font-size: 25px; 
+    color: #F2F2F2;
+    padding: 7px 10px 5px 10px;
+    border-radius: 10px;
+    background-color: #c43024;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.Botao_faleconosco:hover {
+    background-color: #9E241A;
+    color: #F2F2F2;
+}
+
+
+.Palavras{
+    color: #c43024;
+    font-family: Kagitingan;
+    text-transform: uppercase;
+    font-size: 47px;
+}
+
+.Enunciado_1{
+    font-family: GrimptBold;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    font-size:50px;
+    text-align: center;
+
+}
+
+.Descricao{
+    color: #F2F2F2;
+    font-family: GrimptRegular;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+.Titulo{
+    color: #F2F2F2;
+    font-family: GrimptRegular;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.Maior{
+    font-family: Kagitingan;
+    font-size: 100px;
+    color: #F2F2F2;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.Alphas{
+    background-color: #741920;
+    background-image: url(../Logo/LoboFundo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-top: 5%;
+}
+
+.Image_Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Image_Container > div {
+    margin: 3% 7% 2% 7%;
+    text-align: center;
+    flex: 1 1 200px;
+}
+
+.Img {
+    margin-top: 5%;
+    max-width: 100%; 
+    height: auto; 
+}
+
+.Nome {
+    font-family: Kagitingan;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #F2F2F2;
+    margin: 10px 0 0; 
+}
+
+.Funcao {
+    font-family: GrimptRegular;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #F2F2F2;
+    margin: 10px 0 0;
+}
+
+/*Rodapé*/
+.Rodape{
+    background-color: #1B262C;
+    width: 100% /* largura */; 
+    height: 603px;
+}
+
+.Img_container {
+    background-color: #1B262C;
+    text-align: center;
+    padding: 4% 0;
+}
+
+.Texto_3,
+.Texto_4 {
+    font-family: GrimptBold;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #F2F2F2;
+    background-color: #1B262C;
+    margin-bottom: 1%;
+}
+
+.Orcamento {
+    color: #c43024;
+    font-size: 25px;
+    font-family: Kagitingan;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #1B262C;
+    transition: color 0.5s ease, font-size 0.5s ease;
+}
+
+.Orcamento:hover {
+    color: #9E241A;
+    font-size: 30px;
+}
+
+.Direitos{
+    background-color: #1B262C;
+    color: #F2F2F2;
+    font-family: GrimptBold;
+    font-size: 15px;
+}
+
+.Contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Conteudo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.Insta_1,
+.Zap_1,
+.Email_1 {
+    color: #c43024;
+    text-transform: uppercase;
+    font-family: GrimptBold;
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 1%;
+}
+
+.h2 {
+    color: #c43024;
+    font-family: Kagitingan;
+    font-size: 25px; 
+    text-transform: uppercase;
+}
+
+.Insta, .Zap {
+    color: #F2F2F2;
+    font-family: GrimptRegular;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+.Email_2 {
+    font-family: GrimptRegular;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+}
+
+

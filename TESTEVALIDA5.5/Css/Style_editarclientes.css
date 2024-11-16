@@ -1,0 +1,89 @@
+@font-face {
+    font-family: GrimptBold;
+    src: url(../Fonte/grimpt-bold.ttf);
+}
+
+@font-face {
+    font-family: GrimptRegular;
+    src: url(../Fonte/grimpt-regular.ttf);
+}
+
+@font-face {
+    font-family: Kagitingan;
+    src: url(../Fonte/Kagitingan.otf);
+}
+
+* {
+    margin: 1; /* Tirar as margens e espaçamentos*/
+    padding: 1;
+}
+
+
+body {
+    background-color: #1B262C; /* Cor de fundo*/
+    width: 100%;
+    overflow-x: hidden; /* Impede a rolagem lateral */
+}
+
+
+h2{
+    color: #F2F2F2;
+    font-family: kagitingan;
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+
+form{
+    font-family: GrimptBold;
+    color: #F2F2F2;
+    font-size: 22px;
+}
+
+
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+form input{
+    border: none;
+    outline: unset;
+    padding: 15px;
+    width:250px;
+    border-radius: 16px;
+    border: 1px  #F2F2F2;
+}
+
+
+label{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+button{
+    display: block;
+    border-radius: 16px;
+    background-color: #9E241A;
+    font-family: Kagitingan;
+    color: #F2F2F2;
+    text-transform:uppercase;
+    height: 50px;
+    width: 280px;
+    font-size: 35px;
+    transition: 0.5s ease;
+    border: 1px solid #1B262C;
+}
+
+button:hover{
+    background-color: #C43024;
+    cursor: pointer;
+}
