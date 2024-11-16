@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <span class="span-required">Digite um e-mail válido</span>
                 <label for="TELEFONE">Telefone</label>
                 <input type="tel" id="telefone" class="puts" name="TELEFONE" placeholder="(00) 00000-0000" ><br>
-                <span class="span-required">Número no modelo: 11999999999</span>
+                <span class="span-required">Número no modelo 11 dígitos: 85900000000</span>
                 <label for="EMPRESA">Empresa</label>
                 <input type="text" id="empresa" class="puts" name="EMPRESA" ><br>
                 <span class="span-required">Obrigátorio</span>
