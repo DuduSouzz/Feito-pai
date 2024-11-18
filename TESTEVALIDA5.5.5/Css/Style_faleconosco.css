@@ -1,0 +1,273 @@
+@font-face {
+    font-family: GrimptBold;
+    src: url(../Fonte/grimpt-bold.ttf);
+}
+
+@font-face {
+    font-family: GrimptRegular;
+    src: url(../Fonte/grimpt-regular.ttf);
+}
+
+@font-face {
+    font-family: Kagitingan;
+    src: url(../Fonte/Kagitingan.otf);
+}
+
+* {
+    margin: 0; /* Tirar as margens e espaçamentos*/
+    padding: 0;
+}
+
+/* Corpo - Navbar*/
+body {
+    background-color: #F2F2F2; /* Cor de fundo*/
+    width: 100%;
+    overflow-x: hidden; /* Impede a rolagem lateral */
+}
+
+.Logo {
+    display: flex; 
+    margin: 0% 0% 2% 8%;
+}
+
+nav {
+    margin-top: 2%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+nav a:hover {
+    color: #741920
+}
+
+.Links {
+    display: flex;
+}
+
+.Links > li {
+    padding-left: 30px;
+    list-style: none;
+}
+
+.Botao_sobrenos,
+.Botao_home,
+.Botao_serviços {
+    text-decoration: none;
+    color: #1B262C;
+    font-family: GrimptBold;
+    font-size: 25px;
+}
+
+.Botao_faleconosco {
+    font-family: GrimptBold;
+    font-size: 25px; 
+    color: #F2F2F2;
+    padding: 7px 10px 5px 10px;
+    border-radius: 10px;
+    background-color: #551419;
+    text-decoration: none;
+}
+
+.Botao_faleconosco:hover {
+    color: #F2F2F2;
+}
+
+/* Conteudo da página */
+
+.Titulo{
+    font-size: 29px;
+    color: #741920;
+    font-family: GrimptBold;
+    text-transform: uppercase;
+    margin: 1% 0 0 9%;
+}
+
+label{
+    color: #1B262C;
+    font-family: GrimptRegular;
+    font-size: 20px;
+    margin: 1% 0 0 9%;
+}
+
+input{
+    border-radius: 6px;
+    width: 350px;
+    height: 35px;
+    margin: 1% 0 1% 9%;
+    border: solid #1B262C 3px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.botao_analise{
+    font-size: 25px;
+    background-color: #741920;
+    color: #F2F2F2;
+    font-family: Kagitingan;
+    text-transform: uppercase;
+    height: 50px;
+    width: 220px;
+    margin: 0 0 5% 13%;
+    border-radius: 15px;
+    border: none;
+    transition: 0.5s ease;
+}
+
+.botao_analise:hover{
+    background-color: #551419;
+    cursor: pointer;
+}
+
+.frase{
+    text-align: center;
+    margin: -400px -4% 250px 40%;
+}
+
+.Titulo_2{
+    font-family: GrimptRegular;
+    color: #1B262C;
+    font-size: 38px;
+}
+
+.voce,
+.potencial,
+.digital{
+    font-family: Kagitingan;
+    text-transform: uppercase;
+    color:#741920;
+    text-align: right;
+    font-size: 33px;
+}
+
+
+
+/*Rodapé*/
+.Rodape{
+    background-color: #1B262C;
+    width: 100% /* largura */; 
+    height: 603px;
+}
+
+.Img_container {
+    background-color: #1B262C;
+    text-align: center;
+    padding: 4% 0;
+}
+
+.Texto_3,
+.Texto_4 {
+    font-family: GrimptBold;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #F2F2F2;
+    background-color: #1B262C;
+    margin-bottom: 1%;
+}
+
+.Orcamento {
+    color: #c43024;
+    font-size: 25px;
+    font-family: Kagitingan;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #1B262C;
+    transition: color 0.5s ease, font-size 0.5s ease;
+}
+
+.Orcamento:hover {
+    color: #9E241A;
+    font-size: 30px;
+}
+
+.Direitos{
+    background-color: #1B262C;
+    color: #F2F2F2;
+    font-family: GrimptBold;
+    font-size: 15px;
+}
+
+.Contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Conteudo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.Insta_1,
+.Zap_1,
+.Email_1 {
+    color: #c43024;
+    text-transform: uppercase;
+    font-family: GrimptBold;
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 1%;
+}
+
+.h2 {
+    color: #c43024;
+    font-family: Kagitingan;
+    font-size: 25px; 
+    text-transform: uppercase;
+}
+
+.Insta, .Zap {
+    color: #F2F2F2;
+    font-family: GrimptRegular;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+.Email_2 {
+    font-family: GrimptRegular;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+}
+
+:root{
+    --color-white: #fff;
+    --color-red: #e63636;
+    --color-dark1: #181818;
+    --color-dark2: #1e1e1e;
+    --color-purple1: #9333ff;
+    --color-purple2: indigo;
+}
+
+
+
+.span-required{
+    font-family: GrimptRegular;
+    font-size: 15px;
+    margin: -9px 0 2px 130px;
+    color: var(--color-red);
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
